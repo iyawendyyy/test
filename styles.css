@@ -1,0 +1,186 @@
+html {
+    scroll-behavior: smooth; /* Menambahkan efek smooth scrolling */
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    font-size: 1rem; /* Ukuran font default */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gaya untuk perangkat dengan lebar layar maksimum 768px (tablet dan ponsel) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Contoh gaya lainnya untuk layar kecil */
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+}
+
+/* Gaya untuk perangkat dengan lebar layar maksimum 480px (ponsel) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+}
+
+.container {
+    width: 100vw; /* 100% dari lebar viewport */
+    height: 100vh; /* 100% dari tinggi viewport */
+    padding: 2rem;
+}
+
+header, footer header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Padding header */
+    background-color: #05004b;
+    height: 30px; /* Tinggi header */
+}
+
+header h1 {
+    font-size: 2em; /* Ukuran font header */
+    color: #ffffff; /* Warna tulisan header */
+}
+
+footer header{
+    font-size: 1em; /* Ukuran font header */
+    color: #ffffff; /* Warna tulisan header */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Jarak antar item menu */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Warna tulisan menu */
+    padding: 10px;
+    background-color: #05004b; /* Warna background default */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #0b0194; /* Warna background saat hover */
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px; /* Membuat sisi tumpul */
+    margin-right: 100px; /* Jarak antara foto dan teks */
+}
+
+.contact-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat foto berbentuk bulat */
+    margin-right: 20px;
+}
+
+.contact-container {
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    display: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-info p {
+    margin: 5px 0; /* Mengurangi jarak antar elemen */
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; /* Membuat setiap bagian setinggi viewport */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-container h2 {
+    font-size: 4em; /* Mengubah ukuran font kalimat "Halo, Saya Wendy" */
+}
+
+.small-text {
+    font-size: 1.3em; /* Ukuran font kecil */
+    color: #000000; /* Warna teks kecil */
+    margin-top: 0.0px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+/* Warna background untuk halaman yang berbeda */
+.main-menu-bg {
+    background-color: #00e1ff; /* Warna background untuk Main Menu */
+}
+
+.about-bg {
+    background-color: #ffffff; /* Warna background untuk About */
+}
+
+.portfolio-bg {
+    background-color: #ffffff; /* Warna background untuk Portfolio */
+}
+
+.contact-bg {
+    background-color: #ffffff; /* Warna background untuk Contact */
+}
+
+.footer-header {
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
